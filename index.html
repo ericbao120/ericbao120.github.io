@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Databases</title>
+        <link rel="stylesheet" href="./database.css">
+        <script src=jquery-3.6.0.js></script>
+    </head>
+
+<body>
+<div class="databases-wrap">
+    <p><strong>Requires Membership:</strong></p>
+    <form>
+      <label><input type="checkbox" name="membership" value="yes1" id="yes1" /> Yes</label><br>  
+      <label><input type="checkbox" name="membership" value="no1" id="no1" /> No</label>
+    </form>
+    <p><strong>Has Age:</strong></p>
+    <form>
+      <label><input type="checkbox" name="age" value="yes2" id="yes2" /> Yes</label><br>
+      <label><input type="checkbox" name="age" value="no2" id="no2" /> No</label>
+    </form>  
+    <p><strong>Has Sex:</strong></p>
+    <form>
+      <label><input type="checkbox" name="sex" value="yes3" id="yes3" /> Yes</label><br>
+      <label><input type="checkbox" name="sex" value="no3" id="no3" /> No</label>
+    </form>  
+    <p><strong>Has Race:</strong></p>
+    <form>
+      <label><input type="checkbox" name="race" value="yes4" id="yes4" /> Yes</label><br>
+      <label><input type="checkbox" name="race" value="no4" id="no4" /> No</label>
+    </form>  
+    <p><strong>Has Zipcode:</strong></p>
+    <form>
+      <label><input type="checkbox" name="zipcode" value="yes5" id="yes5" /> Yes</label><br>
+      <label><input type="checkbox" name="zipcode" value="no5" id="no5" /> No</label>
+    </form> 
+    <p><strong>Has Income:</strong></p>
+    <form>
+      <label><input type="checkbox" name="income" value="yes6" id="yes6" /> Yes</label><br>
+      <label><input type="checkbox" name="income" value="no6" id="no6" /> No</label>
+    </form> 
+    <p><strong>Has Comorbidities:</strong></p>
+    <form>
+      <label><input type="checkbox" name="comorbidities" value="yes7" id="yes7" /> Yes</label><br>
+      <label><input type="checkbox" name="comorbidities" value="no7" id="no7" /> No</label>
+    </form> 
+    <p><strong>Has ICD-9:</strong></p>
+    <form>
+      <label><input type="checkbox" name="icd-9" value="yes8" id="yes8" /> Yes</label><br>
+      <label><input type="checkbox" name="icd-9" value="no8" id="no8" /> No</label>
+    </form> 
+    <p><strong>Has ICD-10:</strong></p>
+    <form>
+      <label><input type="checkbox" name="icd-10" value="yes9" id="yes9" /> Yes</label><br>
+      <label><input type="checkbox" name="icd-10" value="no9" id="no9" /> No</label>
+    </form> 
+    <p><strong>Has CPT:</strong></p>
+    <form>
+      <label><input type="checkbox" name="cpt" value="yes10" id="yes10" /> Yes</label><br>
+      <label><input type="checkbox" name="cpt" value="no10" id="no10" /> No</label>
+    </form> 
+    <p><strong>Has ICD-10 PCS:</strong></p>
+    <form>
+      <label><input type="checkbox" name="icd-10-pcs" value="yes11" id="yes11" /> Yes</label><br>
+      <label><input type="checkbox" name="icd-10-pcs" value="no11" id="no11" /> No</label>
+    </form> 
+    <p><strong>Has Complications:</strong></p>
+    <form>
+      <label><input type="checkbox" name="complications" value="yes12" id="yes12" /> Yes</label><br>
+      <label><input type="checkbox" name="complications" value="no12" id="no12" /> No</label>
+    </form> 
+    <p><strong>Has Longitudinal Patient Tracking:</strong></p>
+    <form>
+      <label><input type="checkbox" name="lpt" value="yes13" id="yes13" /> Yes</label><br>
+      <label><input type="checkbox" name="lpt" value="no13" id="no13" /> No</label>
+    </form> 
+    <p><strong>Has Longitudinal Surgeon Tracking:</strong></p>
+    <form>
+      <label><input type="checkbox" name="lst" value="yes14" id="yes14" /> Yes</label><br>
+      <label><input type="checkbox" name="lst" value="no14" id="no14" /> No</label>
+    </form> 
+    <p><strong>Has Expected Payment Source:</strong></p>
+    <form>
+      <label><input type="checkbox" name="eps" value="yes15" id="yes15" /> Yes</label><br>
+      <label><input type="checkbox" name="eps" value="no15" id="no15" /> No</label>
+    </form> 
+    <p><strong>Has Total Charges:</strong></p>
+    <form>
+      <label><input type="checkbox" name="charges" value="yes16" id="yes16" /> Yes</label><br>
+      <label><input type="checkbox" name="charges" value="no16" id="no16" /> No</label>
+    </form> 
+    <p><strong>Has COVID ICD-10:</strong></p>
+    <form>
+      <label><input type="checkbox" name="covid-icd" value="yes17" id="yes17" /> Yes</label><br>
+      <label><input type="checkbox" name="covid-icd" value="no17" id="no17" /> No</label>
+    </form> 
+    <p><strong>Has Covid-specific Questions:</strong></p>
+    <form>
+      <label><input type="checkbox" name="covid-specific" value="yes18" id="yes18" /> Yes</label><br>
+      <label><input type="checkbox" name="covid-specific" value="no18" id="no18" /> No</label>
+    </form> 
+  </div>
+  
+  <div class="databases">
+    <div class="database" data-id="ASAPS" data-category="yes1 yes2 yes3 yes4 yes6 yes16"><a href=https://www.theaestheticsociety.org/media/procedural-statistics target='_blank'>American Society for Aesthetic Plastic Surgery (ASAPS)</a></div>
+    <div class="database" data-id="CosmetAssure" data-category="yes1 yes2 yes7 yes12"><a href=https://cosmetassure.com/statistics/ target='_blank'>CosmetAssure</a></div>
+    <div class="database" data-id="HCUP-KID" data-category="no1 yes2 yes3 yes4 no5 yes6 yes7 yes8 yes9 no10 yes11 no12 no13 yes14 yes15 yes16 yes17 no18"><a href="https://hcup-us.ahrq.gov/db/nation/kid/kiddbdocumentation.jsp" target='_blank'>Healthcare Cost and Utilization Project: Kids' Inpatient Database (HCUP KID)</a></div>
+    <div class="database" data-id="HCUP-NEDS" data-category="no1 yes2 yes3 yes4 no5 yes6 yes7 yes8 yes9 yes10 yes11 no12 no13 no14 yes15 yes16 yes17 no18"><a href="https://hcup-us.ahrq.gov/db/nation/neds/nedsdbdocumentation.jsp" target='_blank'>Healthcare Cost and Utilization Project: Nationwide Emergency Department Sample (HCUP NEDS)</a></div>  
+    <div class="database" data-id="HCUP-NIS" data-category="no1 yes2 yes3 yes4 no5 yes6 yes7 yes8 yes9 no10 yes11 no12 no13 yes14 yes15 yes16 yes17 no18"><a href="https://hcup-us.ahrq.gov/db/nation/nis/nisdbdocumentation.jsp" target='_blank'>Healthcare Cost and Utilization Project: National Inpatient Sample (HCUP NIS)</a></div>  
+    <div class="database" data-id="HCUP-SASD" data-category="no1 yes2 yes3 yes4 yes5 yes6 yes7 yes8 yes9 yes10 no12 no13 yes14 yes15 yes16"><a href="https://hcup-us.ahrq.gov/db/state/sasddbdocumentation.jsp" target='_blank'>Healthcare Cost and Utilization Project: State-Specific Ambulatory Surgery and Services Databases (HCUP SASD)</a></div>  
+    <div class="database" data-id="HCUP-SEDD" data-category="no1 yes2 yes3 yes4 yes5 yes6 yes7 yes8 yes9 yes10 no12 no13 no14 yes15 yes16"><a href="https://hcup-us.ahrq.gov/db/state/sedddbdocumentation.jsp" target='_blank'>Healthcare Cost and Utilization Project: State Emergency Departmment Databases (HCUP SEDD)</a></div>  
+    <div class="database" data-id="HCUP-SID" data-category="no1 yes2 yes3 yes4 yes5 yes6 yes7 yes8 yes9 yes10 no12 no13 yes14 yes15 yes16"><a href="https://hcup-us.ahrq.gov/db/state/siddbdocumentation.jsp" target='_blank'>Healthcare Cost and Utilization Project: State-specific inpatient databases (HCUP SID)</a></div> 
+    <div class="database" data-id="HCUP-NASS" data-category="no1 yes2 yes3 yes4 no5 yes6 yes7 no8 yes9 yes10 no11 no12 no13 no14 yes15 yes16 yes17 no18"><a href="https://hcup-us.ahrq.gov/db/nation/nass/nassdbdocumentation.jsp" target='_blank'>Healthcare Cost and Utilization Project: National Ambulatory Surgery Sample (HCUP NASS)</a></div> 
+    <div class="database" data-id="HCUP-NRD" data-category="no1 yes2 yes3 yes4 no5 yes6 yes7 yes8 yes9 no10 yes11 no12 no13 no14 yes15 yes16 yes17 no18"><a href="https://hcup-us.ahrq.gov/db/nation/nrd/nrddbdocumentation.jsp" target='_blank'>Healthcare Cost and Utilization Project: National Readmission Database (HCUP NRD)</a></div> 
+    <div class="database" data-id="NCDB" data-category="yes2 yes3 yes4 no5 yes6 no7"><a href="https://www.facs.org/media/kezhorot/getting-started-with-the-2020-puf.pdf" target='_blank'>American College of Surgeons National Cancer Database (NCDB)</a></div>  
+    <div class="database" data-id="NAMCS" data-category="no1 yes2 yes3 yes4 no5 no6 no7 no8 no9 no10 no12 no13 no14 yes15 no16"><a href="https://www.cdc.gov/nchs/ahcd/datasets_documentation_related.htm" target='_blank'>National Ambulatory Medical Care Survey (NAMCS)</a></div>  
+    <div class="database" data-id="NHAMCS" data-category="no1 yes2 yes3 yes4 no5 no6 no7 no8 no9 no10 no12 no13 no14 yes15 no16"><a href="https://www.cdc.gov/nchs/ahcd/datasets_documentation_related.htm" target='_blank'>National Hospital Ambulatory Medical Care Survery (NHAMCS)</a></div>  
+    <div class="database" data-id="NSQIP-Adult" data-category="yes1 yes2 yes3 yes4 no5 no6 yes7 yes8 yes9 yes10 no11 yes12 yes13 no14 no15 no16 yes17 yes18"><a href="https://www.facs.org/media/pz0fihg4/ug06.pdf" target='_blank'>National Surgical Quality Improvement Program (NSQIP Adult)</a></div>
+    <div class="database" data-id="NSQIP-Peds" data-category="yes1 yes2 yes3 yes4 no5 no6 yes7 yes8 yes9 yes10 no11 yes12 yes13 no14 no15 no16 yes17 yes18"><a href="https://www.facs.org/media/xxxnl4vz/peds_nsqip_userguide_2021.pdf" target='_blank'>National Surgical Quality Improvement Program (NSQIP Pediatric)</a></div>  
+    <div class="database" data-id="NTDB" data-category="yes1 yes2 yes3 yes4 no5 no6 yes7 yes8 yes9 no10 yes11 yes12 no13 no14 yes15 no16 yes17 no18"><a href="https://www.facs.org/media/adujvrqx/tqp-puf-user-manual-2021.pdf" target='_blank'>National Trauma Database (NTDB) [Trauma Quality Programs]</a></div> 
+    <div class="database" data-id="OSHPD" data-category="yes2 yes3 yes4 yes5 no6 no7 yes8 yes9 yes10 no12 yes13 no14 yes15 yes16"><a href="https://hcai.ca.gov/data-and-reports/submit-data/patient-data/edas-reporting/" target='_blank'>California Office of State-Wide Health Planning and Development ambulatory surgery database (OSHPD)</a></div> 
+    <div class="database" data-id="SEER" data-category="yes1 yes2 yes3 yes4 no5 no6 no7 no8 no9 no10 no11 no12 yes13 no14 no15 no17 yes18"><a href="https://seer.cancer.gov/data-software/documentation/seerstat/nov2022/#ss-variables" target='_blank'>Surveillance, Epidemiology, and End Results Program (SEER)</a></div> 
+    <div class="database" data-id="TOPS" data-category="yes1 yes2 yes3 yes4 no5 no6 yes7 yes8 yes9 yes10 no11 yes12 no13 no14 no15 no16 yes17 no18"><a href="https://www.plasticsurgery.org/for-medical-professionals/registries/tracking-operations-and-outcomes-for-plastic-surgeons" target='_blank'>Tracking Operations and Outcomes for Plastic Surgeons (TOPS)</a></div>  
+    <div class="database" data-id="PearlDiver" data-category="no1 yes2 yes3 no4 yes5 no6 yes7 yes8 yes9 yes10 yes11 no12 no13 yes14 yes15 yes16 yes17 no18"><a href="https://pearldiverinc.com/" target='_blank'>PearlDiver</a></div>  
+    <div class="database" data-id="NHDS" data-category="yes2 yes3 yes4 yes5 no6 no7 yes8 no9 no10 no11 no12 no13 no14 yes15 no16 no17 no18"><a href="https://www.cdc.gov/nchs/nhds/nhds_questionnaires.htm" target='_blank'>National Hospital Discharge Survery (NHDS)</a></div>  
+    <div class="database" data-id="NHCS" data-category="yes2 yes3 no4 yes5 no6 no7 yes8 yes9 yes10 yes11 no12 no13 no14 yes15 yes16 yes17 yes18"><a href="https://www.cdc.gov/rdc/data/b1/NHCS_RDC_USERS_GUIDE.pdf" target='_blank'>National Hospital Care Survey (NHCS)</a></div>
+    <div class="database" data-id="MarketScan" data-category="yes1 yes2 yes3 yes4 yes5 yes6 yes7 yes8 yes9 no10 yes11 yes12 yes13 no14 yes15 yes16 yes17 no18"><a href="https://www.ibm.com/downloads/cas/0NKLE57Y" target='_blank'>MarketScan</a></div>  
+    <div class="database" data-id="Premier" data-category="yes2 yes3 yes4 no5 no6 yes7 yes8 yes9 yes10 yes11 yes13 no14 yes15 yes16 yes17"><a href="https://products.premierinc.com/downloads/PremierHealthcareDatabaseWhitepaper.pdf" target='_blank'>Premier</a></div>                 	
+  </div>
+  <script type="text/javascript" src="./database.js"></script>
+</body>
+</html>
