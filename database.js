@@ -18,13 +18,13 @@ var filterFunc = function() {
   // loop over the selected filter name -> (array) values pairs
   $.each(selectedFilters, function(name, filterValues) {
 
-    // filter each .flower element
+    // filter each .database element
     $filteredResults = $filteredResults.filter(function() {
 
       var matched = false,
         currentFilterValues = $(this).data('category').split(' ');
 
-      // loop over each category value in the current .flower's data-category
+      // loop over each category value in the current .database's data-category
       $.each(currentFilterValues, function(_, currentFilterValue) {
 
         // if the current category exists in the selected filters array
@@ -37,7 +37,7 @@ var filterFunc = function() {
         }
       });
 
-      // if matched is true the current .flower element is returned
+      // if matched is true the current .database element is returned
       return matched;
 
     });
@@ -47,3 +47,18 @@ var filterFunc = function() {
 }
 
 $filterCheckboxes.on('change', filterFunc);  
+
+var acc = document.getElementsByClassName("database");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
